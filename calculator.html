@@ -1,0 +1,56 @@
+<html>
+<head>
+  <title>
+    Discount Calculator
+  </title>
+  <script src="calculator.js"></script>
+  <style>
+    body {
+      font-family: Source Sans Pro, sans-serif;
+    }
+    .DiscountPricing {
+      border-color: black;
+      border-style: dashed;
+      border-color: gray;
+      padding: 50px;
+      padding-top: 10px;
+      margin: 50px;
+      width: 400px;
+      float: right;
+      text-align: center;
+    }
+
+    .description {
+      text-align: justify;
+    }
+
+    button {
+      width: 100px;
+      height: 30px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    #totalStudents {
+      width: 50px;
+      height: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="DiscountPricing">
+    <h1 align="center">
+      Discount Pricing Calculator
+    </h1>
+      <p>
+        Get an estimate of your total cost per school.
+      </p>
+      <p>
+      <p class="description">
+        Save 25% when you purchase more than 100 student accounts.
+        Save even more when you purchase more than 250 student accounts.
+      </p>
+      <p>How many students are there in total?</p>
+      <input type="number" min="1" id="totalStudents">
+      <button onClick="calculateDiscount()">Get Total</button>
+  </div>
