@@ -35,22 +35,34 @@
       width: 50px;
       height: 30px;
     }
+
+    h2 {
+      font-weight: normal;
+    }
+
+    #finalPrice {
+      font-size: 18px;
+      color: black;
+    }
   </style>
 </head>
 <body>
   <div class="DiscountPricing">
     <h1 align="center">
-      Discount Pricing Calculator
+      Discount Price Calculator
     </h1>
+    <h2>Get Bomberbot for your school</h2>
       <p>
         Get an estimate of your total cost per school.
       </p>
       <p>
       <p class="description">
-        Save 25% when you purchase more than 100 student accounts.
-        Save even more when you purchase more than 250 student accounts.
+        Save 25% when you purchase more than 100 student accounts.<br>
+        Save 30% when you purchase more than 250 student accounts.
       </p>
       <p>How many students are there in total?</p>
-      <input type="number" min="1" id="totalStudents">
-      <button onClick="calculateDiscount()">Get Total</button>
+      <input type="number" min="1" id="totalStudents"> 
+      <button onClick="calculateDiscount()">Get Total</button> 
+      <div id="finalPrice">
+      </div>
   </div>
